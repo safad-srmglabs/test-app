@@ -15,7 +15,7 @@ export function Footer() {
               <span className="text-xl font-bold font-heading">Collabus</span>
             </div>
             <p className="text-slate-400 text-sm leading-relaxed">
-              Transforming businesses through innovative technology solutions. 
+              Transforming businesses through innovative technology solutions.
               We build the future of digital experiences.
             </p>
             <div className="flex gap-4 pt-2">
@@ -59,15 +59,18 @@ export function Footer() {
             <ul className="space-y-4">
               <li className="flex items-start gap-3 text-slate-400">
                 <MapPin className="w-5 h-5 text-primary shrink-0 mt-0.5" />
-                <span>123 Tech Park, Innovation Blvd<br />Silicon Valley, CA 94043</span>
+                <span>ACR Mansion G, 147/F, 8th Main<br />3rd Block Koramangala<br />Bengaluru, Karnataka 560034</span>
               </li>
-              <li className="flex items-center gap-3 text-slate-400">
-                <Phone className="w-5 h-5 text-primary shrink-0" />
-                <span>+1 (555) 123-4567</span>
+              <li className="flex items-start gap-3 text-slate-400">
+                <Phone className="w-5 h-5 text-primary shrink-0 mt-0.5" />
+                <div className="flex flex-col">
+                  <span>+91 99645 54137</span>
+                  <span>+971 56 515 5262</span>
+                </div>
               </li>
               <li className="flex items-center gap-3 text-slate-400">
                 <Mail className="w-5 h-5 text-primary shrink-0" />
-                <span>hello@collabus.com</span>
+                <span>mohdsafad@collabus.it.com</span>
               </li>
             </ul>
           </div>
