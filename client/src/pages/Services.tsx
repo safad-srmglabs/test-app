@@ -44,9 +44,11 @@ export default function Services() {
       <div className="bg-slate-900 text-white py-32 relative overflow-hidden">
         <div className="absolute inset-0 bg-[url('https://images.unsplash.com/photo-1451187580459-43490279c0fa?w=1920&q=80')] bg-cover bg-center opacity-20" />
         {/* Descriptive comment: Abstract tech background with network connections/nodes */}
-        
+
         <div className="container mx-auto px-4 md:px-6 relative z-10">
-          <h1 className="text-4xl md:text-6xl font-heading font-bold mb-6">Our Services</h1>
+          <h1 className="text-4xl md:text-6xl font-heading font-bold mb-6 text-transparent bg-clip-text bg-gradient-to-r from-primary to-accent">
+            Our Services
+          </h1>
           <p className="text-xl text-slate-300 max-w-2xl">
             End-to-end technology solutions designed to scale with your business.
           </p>
@@ -58,11 +60,10 @@ export default function Services() {
         <div className="container mx-auto px-4 md:px-6">
           <div className="space-y-32">
             {services.map((service, index) => (
-              <div 
-                key={service.id} 
-                className={`flex flex-col gap-12 items-center ${
-                  index % 2 === 1 ? 'lg:flex-row-reverse' : 'lg:flex-row'
-                }`}
+              <div
+                key={service.id}
+                className={`flex flex-col gap-12 items-center ${index % 2 === 1 ? 'lg:flex-row-reverse' : 'lg:flex-row'
+                  }`}
               >
                 {/* Content */}
                 <div className="flex-1 space-y-6">
@@ -73,7 +74,7 @@ export default function Services() {
                   <p className="text-lg text-muted-foreground leading-relaxed">
                     {service.description}
                   </p>
-                  
+
                   <div className="grid grid-cols-1 sm:grid-cols-2 gap-4 pt-4">
                     {service.features.map((feature, i) => (
                       <div key={i} className="flex items-center gap-3 bg-secondary/30 p-3 rounded-lg border border-border/50">
@@ -95,31 +96,31 @@ export default function Services() {
                 {/* Visual */}
                 <div className="flex-1 w-full">
                   <div className="aspect-video rounded-2xl bg-gradient-to-br from-slate-100 to-slate-200 border border-border shadow-2xl relative overflow-hidden group p-8 flex items-center justify-center">
-                     {/* Decorative Elements */}
-                     <div className="absolute inset-0 bg-grid-slate-200/50 [mask-image:linear-gradient(0deg,white,transparent)]" />
-                     
-                     <div className="relative z-10 grid grid-cols-2 gap-4 w-full max-w-md">
-                        <div className="bg-white p-6 rounded-xl shadow-lg hover:-translate-y-2 transition-transform duration-300">
-                           <Code className="w-8 h-8 text-primary mb-2" />
-                           <div className="h-2 w-16 bg-slate-100 rounded mb-2" />
-                           <div className="h-2 w-full bg-slate-50 rounded" />
-                        </div>
-                        <div className="bg-white p-6 rounded-xl shadow-lg mt-8 hover:-translate-y-2 transition-transform duration-300 delay-100">
-                           <Database className="w-8 h-8 text-accent mb-2" />
-                           <div className="h-2 w-16 bg-slate-100 rounded mb-2" />
-                           <div className="h-2 w-full bg-slate-50 rounded" />
-                        </div>
-                        <div className="bg-white p-6 rounded-xl shadow-lg -mt-8 hover:-translate-y-2 transition-transform duration-300 delay-200">
-                           <Shield className="w-8 h-8 text-indigo-500 mb-2" />
-                           <div className="h-2 w-16 bg-slate-100 rounded mb-2" />
-                           <div className="h-2 w-full bg-slate-50 rounded" />
-                        </div>
-                        <div className="bg-white p-6 rounded-xl shadow-lg hover:-translate-y-2 transition-transform duration-300 delay-300">
-                           <Zap className="w-8 h-8 text-yellow-500 mb-2" />
-                           <div className="h-2 w-16 bg-slate-100 rounded mb-2" />
-                           <div className="h-2 w-full bg-slate-50 rounded" />
-                        </div>
-                     </div>
+                    {/* Decorative Elements */}
+                    <div className="absolute inset-0 bg-grid-slate-200/50 [mask-image:linear-gradient(0deg,white,transparent)]" />
+
+                    <div className="relative z-10 grid grid-cols-2 gap-4 w-full max-w-md">
+                      <div className="bg-white p-6 rounded-xl shadow-lg hover:-translate-y-2 transition-transform duration-300">
+                        <Code className="w-8 h-8 text-primary mb-2" />
+                        <div className="h-2 w-16 bg-slate-100 rounded mb-2" />
+                        <div className="h-2 w-full bg-slate-50 rounded" />
+                      </div>
+                      <div className="bg-white p-6 rounded-xl shadow-lg mt-8 hover:-translate-y-2 transition-transform duration-300 delay-100">
+                        <Database className="w-8 h-8 text-accent mb-2" />
+                        <div className="h-2 w-16 bg-slate-100 rounded mb-2" />
+                        <div className="h-2 w-full bg-slate-50 rounded" />
+                      </div>
+                      <div className="bg-white p-6 rounded-xl shadow-lg -mt-8 hover:-translate-y-2 transition-transform duration-300 delay-200">
+                        <Shield className="w-8 h-8 text-indigo-500 mb-2" />
+                        <div className="h-2 w-16 bg-slate-100 rounded mb-2" />
+                        <div className="h-2 w-full bg-slate-50 rounded" />
+                      </div>
+                      <div className="bg-white p-6 rounded-xl shadow-lg hover:-translate-y-2 transition-transform duration-300 delay-300">
+                        <Zap className="w-8 h-8 text-yellow-500 mb-2" />
+                        <div className="h-2 w-16 bg-slate-100 rounded mb-2" />
+                        <div className="h-2 w-full bg-slate-50 rounded" />
+                      </div>
+                    </div>
                   </div>
                 </div>
               </div>
