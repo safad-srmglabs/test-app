@@ -52,7 +52,7 @@ export default function Contact() {
                   </div>
                   <div>
                     <h3 className="font-semibold text-lg mb-1">Email Us</h3>
-                    <p className="text-muted-foreground">mohdsafad@collabus.it.com</p>
+                    <p className="text-muted-foreground">info@collabus.it.com</p>
                   </div>
                 </div>
 
